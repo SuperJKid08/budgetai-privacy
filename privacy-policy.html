@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BudgetAI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #007AFF;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        a {
+            color: #007AFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated"><strong>Last Updated:</strong> <span id="date"></span></p>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    </script>
+
+    <h2>Introduction</h2>
+    <p>BudgetAI ("we", "our", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+    <h2>Information We Collect</h2>
+    
+    <h3>Financial Information</h3>
+    <ul>
+        <li><strong>Bank Account Data</strong>: When you connect your bank account through Plaid, we access:
+            <ul>
+                <li>Account balances</li>
+                <li>Transaction history</li>
+                <li>Account information (account numbers, routing numbers, etc.)</li>
+            </ul>
+        </li>
+        <li><strong>Purpose</strong>: To provide budgeting features, transaction categorization, and financial insights</li>
+    </ul>
+
+    <h3>Account Information</h3>
+    <ul>
+        <li><strong>Authentication Data</strong>: We collect:
+            <ul>
+                <li>Email address (via Sign in with Apple)</li>
+                <li>User ID (created through Firebase Authentication)</li>
+            </ul>
+        </li>
+        <li><strong>Purpose</strong>: To create and manage your account</li>
+    </ul>
+
+    <h3>Usage Data</h3>
+    <ul>
+        <li><strong>Chat Conversations</strong>: Messages you send to the AI assistant</li>
+        <li><strong>Budget Settings</strong>: Budget categories, limits, and spending goals</li>
+        <li><strong>Transaction Categorizations</strong>: Categories you assign to transactions</li>
+        <li><strong>Purpose</strong>: To personalize your budgeting experience and improve our services</li>
+    </ul>
+
+    <h3>Technical Information</h3>
+    <ul>
+        <li><strong>Device Tokens</strong>: Push notification tokens for delivering transaction alerts</li>
+        <li><strong>Purpose</strong>: To send you notifications about new transactions</li>
+    </ul>
+
+    <h2>How We Use Your Information</h2>
+    <p>We use your information to:</p>
+    <ol>
+        <li><strong>Provide Core Features</strong>:
+            <ul>
+                <li>Sync and display your transactions</li>
+                <li>Categorize transactions using AI</li>
+                <li>Calculate budgets and spending insights</li>
+                <li>Send push notifications for new transactions</li>
+            </ul>
+        </li>
+        <li><strong>Improve Our Services</strong>:
+            <ul>
+                <li>Personalize budgeting recommendations</li>
+                <li>Enhance AI categorization accuracy</li>
+                <li>Optimize app performance</li>
+            </ul>
+        </li>
+        <li><strong>Security</strong>:
+            <ul>
+                <li>Authenticate your account</li>
+                <li>Protect against fraud</li>
+                <li>Secure your data</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Data Sharing</h2>
+    <p>We share your information only with the following trusted service providers:</p>
+    
+    <h3>Plaid</h3>
+    <ul>
+        <li><strong>Purpose</strong>: Secure access to your bank account information</li>
+        <li><strong>Data Shared</strong>: Bank credentials (via secure OAuth), account information</li>
+        <li><strong>Privacy Policy</strong>: <a href="https://plaid.com/legal/privacy-policy" target="_blank">https://plaid.com/legal/privacy-policy</a></li>
+    </ul>
+
+    <h3>OpenAI</h3>
+    <ul>
+        <li><strong>Purpose</strong>: AI-powered transaction categorization</li>
+        <li><strong>Data Shared</strong>: Transaction details (merchant, amount, date, categories)</li>
+        <li><strong>Privacy Policy</strong>: <a href="https://openai.com/policies/privacy-policy" target="_blank">https://openai.com/policies/privacy-policy</a></li>
+    </ul>
+
+    <h3>Firebase (Google)</h3>
+    <ul>
+        <li><strong>Purpose</strong>: Backend infrastructure (authentication, database, push notifications)</li>
+        <li><strong>Data Shared</strong>: User ID, transaction data, chat messages, account balances</li>
+        <li><strong>Privacy Policy</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <p><strong>No Third-Party Advertising:</strong> We do NOT sell your data or share it with advertisers.</p>
+
+    <h2>Data Security</h2>
+    <p>We implement industry-standard security measures:</p>
+    <ul>
+        <li><strong>Encryption</strong>: All data is encrypted in transit (HTTPS/TLS) and at rest</li>
+        <li><strong>Authentication</strong>: Secure authentication via Sign in with Apple</li>
+        <li><strong>Access Controls</strong>: Your data is isolated per user account</li>
+        <li><strong>Secure Storage</strong>: Bank credentials are encrypted using AES-GCM encryption</li>
+        <li><strong>Regular Security Audits</strong>: We regularly review and update our security practices</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>We retain your data for as long as:</p>
+    <ul>
+        <li>Your account is active</li>
+        <li>Required by law</li>
+        <li>Necessary to provide our services</li>
+    </ul>
+    <p>You can delete your account and all associated data at any time through the app settings or by contacting us.</p>
+
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ol>
+        <li><strong>Access</strong>: Request a copy of your data</li>
+        <li><strong>Delete</strong>: Delete your account and all associated data</li>
+        <li><strong>Modify</strong>: Update or correct your information through the app</li>
+        <li><strong>Export</strong>: Export your transaction data</li>
+        <li><strong>Opt-Out</strong>: Disable push notifications in device settings</li>
+    </ol>
+    <p>To exercise these rights, contact us at <a href="mailto:support@budgetai.app">support@budgetai.app</a></p>
+
+    <h2>Children's Privacy</h2>
+    <p>BudgetAI is not intended for users under the age of 13. We do not knowingly collect information from children under 13.</p>
+
+    <h2>International Users</h2>
+    <p>Your information may be transferred to and processed in the United States or other countries where our service providers operate. By using BudgetAI, you consent to this transfer.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+    <ul>
+        <li>Posting the new Privacy Policy on this page</li>
+        <li>Updating the "Last Updated" date</li>
+        <li>Sending you an email notification (if significant changes)</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, please contact us:</p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:support@budgetai.app">support@budgetai.app</a><br>
+    </p>
+
+    <hr>
+
+    <h2>Additional Disclosures</h2>
+
+    <h3>California Privacy Rights (CCPA)</h3>
+    <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information we collect and how it's used.</p>
+
+    <h3>European Privacy Rights (GDPR)</h3>
+    <p>If you are located in the European Economic Area (EEA), you have additional rights under the General Data Protection Regulation (GDPR), including the right to data portability and the right to lodge a complaint with a supervisory authority.</p>
+
+    <h3>Financial Data</h3>
+    <p>We comply with financial data protection regulations. Your bank credentials are stored securely and never accessible to our team. All financial data transmission uses bank-level encryption.</p>
+
+</body>
+</html>
 
